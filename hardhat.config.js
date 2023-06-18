@@ -6,24 +6,11 @@ module.exports = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      chainId: 1337
+      chainId: 42
     },
-    rinkeby:{
-      url:`https://rinkeby.infura.io/v3/${process.env.RPC_Provider_Id}`,
-      accounts:[private_key]
-    }
-    /*
-    mumbai: {
-      // Infura
-      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-      url: "https://rpc-mumbai.matic.today",
-      accounts: [privateKey]
-    },
-    matic: {
-      // Infura
-      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
-      url: "https://rpc-mainnet.maticvigil.com",
-      accounts: [privateKey]
+    kovan:{
+      url:`http://70.34.216.42:9933`,
+      accounts:[1116ead9d0948bc7b873c97b17bad138a263841055d7202564395e8df18a4d27]
     }
     */
   },
